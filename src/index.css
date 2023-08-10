@@ -1,13 +1,189 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
+  font-size: 100%;
 }
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  background-image: url("./images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
+}
+.total-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-section > h1 {
+  /* font-size: 32px; */
+  font-size: clamp(1.125rem, 0.864rem + 4.179vw, 2rem);
+  line-height: clamp(1.4rem, 1.072rem + 5.254vw, 2.5rem);
+  /* line-height: 2.5rem; */
+  text-align: center;
+  color: white;
+}
+.top-section > p {
+  color: white;
+  text-align: center;
+  /* font-size: 1.15rem; */
+  font-size: clamp(0.75rem, 0.631rem + 1.91vw, 1.15rem);
+}
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.trial-box {
+  box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.202);
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+}
+.trial-box > h4 {
+  text-align: center;
+  /* padding: 20px 80px; */
+  padding: 20px clamp(0.625rem, -0.681rem + 20.896vw, 5rem);
+  /* font-size: 16px; */
+  font-size: clamp(0.625rem, 0.513rem + 1.791vw, 1rem);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  margin: 0px;
+}
+.trial-box > h4 > span {
+  font-weight: 300;
+}
+.registration-section {
+  /* width: 90px; */
+  width: clamp(5.625rem, 0.069rem + 88.889vw, 30.625rem);
+
+  box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.202);
+  display: flex;
+  flex-direction: column;
+  /* padding: 30px 30px; */
+  padding: clamp(0.625rem, 0.252rem + 5.97vw, 1.875rem)
+    clamp(0.625rem, 0.252rem + 5.97vw, 1.875rem);
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+.registration-section > div > input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  /* padding: 20px 30px; */
+  padding: 20px clamp(0.313rem, -0.729rem + 16.667vw, 1.875rem);
+
+  /* font-size: 14px; */
+  font-size: clamp(0.625rem, 0.55rem + 1.194vw, 0.875rem);
+  border: 1px solid rgba(0, 0, 0, 0.211);
+}
+.firstname:focus,
+.lastname:focus,
+.email:focus,
+.password:focus {
+  color: hsl(0, 100%, 74%);
+  outline: 0px;
+  border: 2px solid hsl(0, 100%, 74%);
+}
+.registration-section > div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.registration-section > div > svg {
+  margin-top: 20px;
+
+  margin-right: clamp(0.313rem, -0.729rem + 16.667vw, 1.875rem);
+  /* margin-right: 30px; */
+  align-self: flex-end;
+  position: absolute;
+}
+.registration-section > div > p {
+  font-style: italic;
+  font-weight: 500;
+  color: hsl(0, 100%, 74%);
+  margin: 5px 5px 0px 0px;
+  align-self: self-end;
+  font-size: 0.65rem;
+}
+.registration-section > button {
+  border: 0px;
+  box-shadow: 0px 2px 5px hsla(154, 57%, 26%, 0.394);
+  border-radius: 5px;
+  /* padding: 20px; */
+  padding: clamp(0.625rem, 0.438rem + 2.985vw, 1.25rem);
+  background-color: hsl(154, 59%, 51%);
+  transition: 0.3s;
+}
+.registration-section > button:hover {
+  cursor: pointer;
+}
+.registration-section > button > h4 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 400;
+  /* font-size: 1.1rem; */
+  font-size: clamp(0.75rem, 0.646rem + 1.672vw, 1.1rem);
+
+  margin: 0px;
+}
+.registration-section > p {
+  font-weight: 500;
+  /* font-size: 0.8rem; */
+  font-size: clamp(0.65rem, 0.605rem + 0.716vw, 0.8rem);
+
+  color: rgba(0, 0, 0, 0.296);
+  text-align: center;
+  line-height: 1.85rem;
+}
+.registration-section > p > span {
+  font-weight: 700;
+  color: hsl(0, 100%, 74%);
+}
+@media (min-width: 767px) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+  }
+  .total-content {
+    /* padding: 50px 30px; */
+    padding: 50px clamp(1.25rem, -9.154rem + 21.703vw, 9.375rem);
+
+    flex-direction: row;
+    align-items: center;
+  }
+  .top-section {
+    align-items: start;
+    /* padding-right: 20px; */
+    padding-right: clamp(1.25rem, -1.151rem + 5.008vw, 3.125rem);
+  }
+  .registration-section {
+    /* width: 385px; */
+    width: clamp(24.063rem, 14.859rem + 19.199vw, 31.25rem);
+  }
+  .top-section > h1 {
+    /* font-size: 32px; */
+    font-size: clamp(2rem, 0.72rem + 2.671vw, 3rem);
+    /* line-height: 40px; */
+    line-height: clamp(2.5rem, 0.899rem + 3.339vw, 3.75rem);
+    text-align: start;
+  }
+  .top-section > p {
+    text-align: start;
+  }
+}
+.hide {
+  display: none;
 }
