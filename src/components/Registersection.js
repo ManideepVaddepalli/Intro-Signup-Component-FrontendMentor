@@ -90,7 +90,7 @@ export default function Registersection() {
           onChange={changePassword}
           value={password}
           className="password"
-          type="text"
+          type="password"
           placeholder="Password"
         ></input>
         <svg
