@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Intro-Signup-Component-FrontendMentor/static/css/main.0cd08e25.css",
-    "main.js": "/Intro-Signup-Component-FrontendMentor/static/js/main.1e8f22ad.js",
+    "main.js": "/Intro-Signup-Component-FrontendMentor/static/js/main.e0ee0526.js",
     "static/media/bg-intro-desktop.png": "/Intro-Signup-Component-FrontendMentor/static/media/bg-intro-desktop.059183eea52640c5068d.png",
     "static/media/bg-intro-mobile.png": "/Intro-Signup-Component-FrontendMentor/static/media/bg-intro-mobile.02ce398270ece1769ebc.png",
     "index.html": "/Intro-Signup-Component-FrontendMentor/index.html",
     "main.0cd08e25.css.map": "/Intro-Signup-Component-FrontendMentor/static/css/main.0cd08e25.css.map",
-    "main.1e8f22ad.js.map": "/Intro-Signup-Component-FrontendMentor/static/js/main.1e8f22ad.js.map"
+    "main.e0ee0526.js.map": "/Intro-Signup-Component-FrontendMentor/static/js/main.e0ee0526.js.map"
   },
   "entrypoints": [
     "static/css/main.0cd08e25.css",
-    "static/js/main.1e8f22ad.js"
+    "static/js/main.e0ee0526.js"
   ]
 }
